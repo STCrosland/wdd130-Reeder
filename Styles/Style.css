@@ -1,5 +1,5 @@
 /*
-Title: Stye
+Title: Style
 Authors: Spencer T. Crosland, 
 Purpose: General Styling for all pages in Stronghold Strategy Guide Site
 */
@@ -39,24 +39,39 @@ body {
 
 /*  Header */
 header {
-    background: #FFFFFF;
-    height: 178px;
-    position: relative;
-}
-
-header img {
-    width: 178 center;
-    height: auto;
-}
-
-/* Navagation  */
-nav {
-    background: ##FFFFFF;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; 
-    height: 50px; 
+    position: relative;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width:300px; 
+    height: 170px;px
+}
+
+header h1 {
+    font-family: "Oswald";
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+
+/* Navagation  */
+nav {
+    background: #7F00FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
     border-top: 3px solid #000;
     border-bottom: 5px solid #000;
     padding: 0 20px;
@@ -65,7 +80,6 @@ nav {
 
 nav a {
     color: #ffffff;
-    text-shadow: #7F00FF;
     text-decoration: none;
     font-size: 1.5em;
     display: flex;
@@ -73,12 +87,45 @@ nav a {
     justify-content: center;
     transition: background 0.3s ease, text-shadow 0.3s ease;
     cursor: pointer;
+
+    /* FIXED: remove broken text-shadow */
+    text-shadow: 0px 0px 3px #7F00FF;
 }
 
 nav a:hover {
     background: #32CD32;
     text-shadow: 4px 4px 2px #7F00FF;
 }
+nav {
+    background: #7F00FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50px;
+    border-top: 3px solid #000;
+    border-bottom: 5px solid #000;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, text-shadow 0.3s ease;
+    cursor: pointer;
+    text-shadow: 0px 0px 3px #7F00FF;
+}
+
+nav a:hover {
+    background: #32CD32;
+    text-shadow: 4px 4px 2px #7F00FF;
+}
+
 
 
 /*  MAIN CONTENT  */
