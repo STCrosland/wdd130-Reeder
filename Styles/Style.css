@@ -22,12 +22,12 @@ Purpose: General Styling for all pages in Stronghold Strategy Guide Site
 
 /*  Headings use Oswald  */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
 }
 
 /*  Paragraphs use Inter  */
 p {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter";
 }
 
 /*  Body Styles  */
@@ -39,7 +39,7 @@ body {
 
 /*  Header */
 header {
-    background: url() center center / cover no-repeat;
+    background: #FFFFFF;
     height: 178px;
     position: relative;
 }
@@ -82,18 +82,26 @@ nav a:hover {
 
 
 /*  MAIN CONTENT  */
-main h1 {
+ h1 {
     text-align: center;
     font-size: 3em;
     color: #32CD32;
-    text-shadow: 2px 2px 5px #ffffff;
+    text-shadow: 2px 2px 5px #7F00FF;
     margin-bottom: 20px;
 }
-main h2{
+
+ h2{
 
     color: #7F00FF;
     text-shadow: 2px 2px 5px #ffffff;
     margin-bottom: 20px;
+}
+
+p{
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #32CD32;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 main img {
@@ -103,18 +111,19 @@ main img {
     border: 5px solid #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
+    
 }
 
 /*  FOOTER  */
 footer {
-    background: url() center no-repeat;
-    margin: 20px auto; /* centers horizontally */
-    width: 90%; /* or 900px if you prefer a fixed width */
-    max-width: 900px; /* keeps it consistent with #wrapper */
+    background: #32CD32;
+    margin: 20px auto; 
+    width: 90%; 
+    max-width: 900px; 
     text-align: center;
     padding: 15px;
-    border: 5px solid #ffffff;
+    border: 5px solid #7F00FF;
     border-radius: 20px;
     box-shadow: 0 0 20px #ffffff;
     color: #32CD32;
-    text-shadow: 1px 1px 3px #ffffff;
+    text-shadow: 1px 1px 3px #ffffff;}
