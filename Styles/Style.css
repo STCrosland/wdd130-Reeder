@@ -158,7 +158,21 @@ main img {
     border: 5px solid #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
-    
+}
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 30px;
+    margin: 70px;
+    display: block;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: flex;
 }
 
 /*  FOOTER  */
