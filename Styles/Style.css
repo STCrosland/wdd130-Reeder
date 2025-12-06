@@ -39,7 +39,9 @@ body {
 
 /*  Header */
 header {
-    background: #ffffff;
+    background: url(../Images/header.gif) no-repeat center; 
+    background-size: cover;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +56,7 @@ header img {
     top: 50%;
     transform: translateY(-50%);
     max-width:300px; 
-    height: 170px;px
+    height: 130px;px
 }
 
 header h1 {
@@ -122,7 +124,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #32CD32;
+    background: url(../Images/eye_of_ender_nav_button.gif);
     text-shadow: 4px 4px 2px #7F00FF;
 }
 
@@ -154,13 +156,12 @@ p{
 main img {
     display: block;
     margin: 0 auto 20px auto;
-    max-width: 80%;
     border: 5px solid #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
 }
 
-
+    /*  column and row set up location of the main images  */
 .column{
     float: left;
     width: 33.33%;
@@ -173,6 +174,15 @@ main img {
   content: "";
   clear: both;
   display: flex;
+}
+
+.eye_of_ender img {
+    width: 500px;
+    height: 500px;
+}
+
+.Niniabrain img {
+    height: 500px;
 }
 
 /*  FOOTER  */
