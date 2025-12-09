@@ -50,6 +50,9 @@ header {
 }
 
 header img {
+     border: 5px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffffff;
     position: absolute;
     left: 15px;
     top: 50%;
