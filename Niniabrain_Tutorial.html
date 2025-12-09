@@ -19,46 +19,72 @@ Purpose: Ninjabrain Tutorial Page for Stronghold Strategy Guide Site
 
 <body>
     <!-- Header -->
-    <header>
+   <header>
         <h1> Stronghold </h1>
-        <img src="Images/Logo.png" alt="  Stronghold Strategy Guide Logo">
+        <img src="Images/Styling/Logo.png" alt="  Stronghold Strategy Guide Logo">
+        
     </header>
 
     <!-- Navigation -->
-    <nav>
+   <nav>
         <a href="index.html">Home</a>
-        <a href="Manual_Tutorial">Manual Tutorial</a>
-        <a href="Niniabrain_Tutorial">Niniabrain Tutorial</a>
+        <a href="Manual_tutorial.html">Manual Tutorial</a>
+        <a href="Niniabrain_Tutorial.html">Niniabrain Tutorial</a>
 
     </nav>
 
     <!-- Main Content -->
     <main>
-        <h2>NinJa brain calc</h2>
-        <p>This page is based on this helpful video: <a
-                href="https://www.youtube.com/watch?v=Rx8i7e5lu7g">https://www.youtube.com/watch?v=Rx8i7e5lu7g</a></p>
-        <p>Ninjabrain Bot is a utility used primarily by speedrunners to calculate the Stronghold's coordinates with
-            high accuracy after only two or three Eye of Ender throws, eliminating the need for manual trigonometric
-            calculations.</p>
+        <h1>NinJa Brain Calc</h1>
+            <p>This page is based on this helpful video</p>
+            
+            <div class=Ninjabrain_Video>
+                <a href="https://www.youtube.com/watch?v=Rx8i7e5lu7g"> 
+                    <img src="Images/NInjaBrain_Page/Vidoe_Thumnail.png" alt="Calculator Video Thumbnail">
+                </a>
+            
+                <p>Ninjabrain Bot is a utility used primarily by speedrunners to calculate the Stronghold's coordinates with
+                high accuracy after only two or three Eye of Ender throws, eliminating the need for manual trigonometric
+                calculations.</p>  
 
-        <h3>Step 1: Installation and Setup</h3>
-        <ol>
-            <li><a href="https://github.com/Ninjabrain1/Ninjabrain-Bot/releases/"></a>Download the Program:</a> The
-                program is typically distributed as a Java archive file. You'll need to download the latest release,
-                usually named ninjabrainbot-[version number].jar.</li>
-            <li>Run the File: Save the .jar file to an accessible folder and run it to launch the calculator interface.
-            </li>
-            <li>Configure Settings: Access the bot's settings to ensure accurate Stronghold location display:
-                <ul>
-                    <li>Display Stronghold Location: Set this to 4 4. This coordinate will place the calculated location
-                        in the middle of the Stronghold's main starter staircase chunk, making it easier to dig down and
-                        find the structure.</li>
-                    <li>Show Other Coordinates: Keep this on to view the corresponding Nether coordinates, which is
-                        useful for setting up a portal connection.</li>
-                </ul>
-            </li>
-        </ol>
+            </div>
+            
+            
+            <div class="Ninja_Step_One">
+                <h2>Step 1: Installation and Setup</h2>
+
+                    <p>1.	Download the Program: The program is typically distributed as a Java archive file. You'll need to download the latest release, usually named ninjabrainbot-[version number].jar.</p>
+                        <a href="https://github.com/Ninjabrain1/Ninjabrain-Bot/releases/">
+                            <Img src="Images/NInjaBrain_Page/Download_Icon.jpeg" alt="Downlad Icon"> 
+                        </a>
+                    <p>2.	Run the File: Save the .jar file to an accessible folder and run it to launch the calculator interface.</p>
+                    <p>3.	Configure Settings: Access the bot's settings to ensure accurate Stronghold location display:</p>
+            </div>
+            
+            <div class="Ninja_Step_Two">
+<h2>Step 2: Low Precision Triangulation (The Core Method)</h2>
+
+                <p>This is the standard, most forgiving strategy for locating the Stronghold. It typically requires three Eye throws to achieve high confidence.</h3>
+                <h3>1.	First Throw and Input:
+                        <p>○	Before throwing, stand in the corner of 2 blocks to correct for any potential synchronization issues (d-sync).</p>
+                        <p>○	Throw your first Eye of Ender</p>
+                        <p>○	Change your FOV to 30</p>
+                        <p>○	Reduce your mouse sensitivity </p>
+                        <p>○	Align your crosshair with the left of the center pixels</p>
+                        <p>○	Press F3 + C to give Ninjabrain bot your angle</p>
+                        <img src="Images/NInjaBrain_Page/Eye_of_ender_sky.png" alt="Eye of Ender Sky">
+                <h3>2.	Second Throw and Calculation:</h3>
+                        <p>○	Move away from your initial position.</p>
+                        <p>○	Throw a second Eye, record the new measurement.</p>
+                        <p>○	The bot will immediately display the most likely Stronghold coordinates and a confidence percentage.</p>
+                        <p>○	If the confidence is low (e.g., 36%), travel to the calculated location and perform a third Eye throw to confirm the Stronghold's exact chunk. A high-confidence result (e.g., 99.0%) confirms the coordinates</p>
+                        <img src="Images/NInjaBrain_Page/Ninja_Bot.png" alt="Ninja Bot Calculator">
+                        
+                <h3>3.	Dig Down: Once the bot provides high-confidence coordinates (e.g., X: 1428, Z: -1228), travel to that location and dig down to find the Stronghold's starter staircase.</h3>
+            </div> 
+        
     </main>
+
     <!-- Footer -->
     <footer>
         <ul>

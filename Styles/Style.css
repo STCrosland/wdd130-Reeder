@@ -39,7 +39,7 @@ body {
 
 /*  Header */
 header {
-    background: url(../Images/header.gif) no-repeat center; 
+    background: url(../Images/Styling/header.gif) no-repeat center; 
     background-size: cover;
     height: 90%;
     display: flex;
@@ -146,6 +146,13 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+ h3{
+
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #7F00FF;
+    margin-bottom: 20px;
+}
+
 p{
     color: #ffffff;
     text-shadow: 2px 2px 5px #32CD32;
@@ -182,6 +189,27 @@ main img {
 }
 
 .Niniabrain img {
+    height: 500px;
+}
+
+.Manual_Video img{
+    width: 700px;
+    height: 300px;
+    position: center;
+}
+
+.Ninjabrain_Video img{
+    width: 700px;
+    height: 300px;
+}
+
+.Ninja_Step_One img{
+    width: 300px;
+    height: 100px;
+}
+
+.Ninja_Step_Two img{
+     width: 700px;
     height: 500px;
 }
 
