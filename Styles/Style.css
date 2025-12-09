@@ -1,47 +1,46 @@
 /*
 Title: Style
-Authors: Spencer T. Crosland, 
+Authors: Spencer T. Crosland
 Purpose: General Styling for all pages in Stronghold Strategy Guide Site
 */
-
 
 /* Fonts  */
 .oswald {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* change if needed */
+    font-weight: 400;
     font-style: normal;
 }
 
 .inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* change if needed */
+    font-weight: 400;
     font-style: normal;
 }
 
-/*  Headings use Oswald  */
+/* Headings use Oswald */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald";
 }
 
-/*  Paragraphs use Inter  */
+/* Paragraphs use Inter */
 p {
     font-family: "Inter";
 }
 
-/*  Body Styles  */
+/* Body Styles */
 body {
     padding: 0;
     margin: 0;
     background: #1C1C1E;
 }
 
-/*  Header */
+/* Header */
 header {
-    background: url(../Images/Styling/header.gif) no-repeat center; 
+    background: url(../Images/Styling/header.gif) no-repeat center;
     background-size: cover;
-    height: 90%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,12 +51,11 @@ header {
 
 header img {
     position: absolute;
-    left: 0px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    max-width:300px; 
-    height: 130px;px
-}
+    max-width: 5000px;
+    height: 200px; }
 
 header h1 {
     font-family: "Oswald";
@@ -65,8 +63,7 @@ header h1 {
     font-weight: 400;
 }
 
-
-/* Navagation  */
+/* Navigation */
 nav {
     background: #7F00FF;
     display: flex;
@@ -87,51 +84,20 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.3s ease, text-shadow 0.3s ease;
-    cursor: pointer;
-
-    /* FIXED: remove broken text-shadow */
+    padding: 10px 25px;
     text-shadow: 0px 0px 3px #7F00FF;
+    transition: background 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-    background: #32CD32;
-    text-shadow: 4px 4px 2px #7F00FF;
-}
-nav {
-    background: #7F00FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    height: 50px;
-    border-top: 3px solid #000;
-    border-bottom: 5px solid #000;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease, text-shadow 0.3s ease;
-    cursor: pointer;
-    text-shadow: 0px 0px 3px #7F00FF;
-}
-
-nav a:hover {
-    background: url(../Images/eye_of_ender_nav_button.gif);
+    background: url(../Images/Styling/axe.gif) center/cover no-repeat; 
+    background-size: 50px;
+    background-color: #32CD32;
     text-shadow: 4px 4px 2px #7F00FF;
 }
 
-
-
-/*  MAIN CONTENT  */
- h1 {
+/* MAIN CONTENT */
+h1 {
     text-align: center;
     font-size: 3em;
     color: #32CD32;
@@ -139,21 +105,19 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
- h2{
-
+h2 {
     color: #7F00FF;
     text-shadow: 2px 2px 5px #ffffff;
     margin-bottom: 20px;
 }
 
- h3{
-
+h3 {
     color: #ffffff;
     text-shadow: 2px 2px 5px #7F00FF;
     margin-bottom: 20px;
 }
 
-p{
+p {
     color: #ffffff;
     text-shadow: 2px 2px 5px #32CD32;
     margin-bottom: 20px;
@@ -168,8 +132,8 @@ main img {
     box-shadow: 0 0 15px #ffffff;
 }
 
-    /*  column and row set up location of the main images  */
-.column{
+/* Column and row setup */
+.column {
     float: left;
     width: 33.33%;
     padding: 30px;
@@ -178,11 +142,12 @@ main img {
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: flex;
+    content: "";
+    display: block; 
+    clear: both;
 }
 
+/* Image sizes */
 .eye_of_ender img {
     width: 500px;
     height: 500px;
@@ -192,43 +157,43 @@ main img {
     height: 500px;
 }
 
-.Manual_Video img{
+.Manual_Video img {
     width: 700px;
     height: 300px;
-    position: center;
 }
 
-.Manual_Step_One{
+.Manual_Step_One {
    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-.Ninjabrain_Video img{
+.Ninjabrain_Video img {
     width: 700px;
     height: 300px;
 }
 
-.Ninja_Step_One img{
+.Ninja_Step_One img {
     width: 300px;
     height: 100px;
 }
 
-.Ninja_Step_Two img{
-     width: 700px;
+.Ninja_Step_Two img {
+    width: 700px;
     height: 500px;
 }
 
-/*  FOOTER  */
+/* FOOTER */
 footer {
     background: #32CD32;
-    margin: 20px auto; 
-    width: 90%; 
-    max-width: 900px; 
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
     text-align: center;
     padding: 15px;
     border: 5px solid #7F00FF;
     border-radius: 20px;
     box-shadow: 0 0 20px #ffffff;
     color: #32CD32;
-    text-shadow: 1px 1px 3px #ffffff;}
+    text-shadow: 1px 1px 3px #ffffff;
+}
