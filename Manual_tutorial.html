@@ -43,7 +43,48 @@ Purpose: Manual Tutorial Page for Stronghold Strategy Guide Site
 
         <div class="Manual_Step_One">
             <h2>Step 1: Preparation and First Throw</h2>
+                <p>To make the math work, you must be able to view your in-game coordinates and angle.</p>
 
+                <h3>1.	Display F3 Data: Open your debug screen by pressing F3 (Java Edition). You need to note the Facing angle</h3>
+                    <img src="Images/Manual_Page/Manuual_Step__one.png" alt="Step 1">
+                <h3>2.	The First Throw: Throw an Eye of Ender. As it hovers, quickly align the green vertical line of your crosshair with the left side of the floating Eye center pixels</h3>
+                <h3>3.	Note the Angle: Record the precise angle measurement shown on the F3 screen. This is Angle 1 (e.g., -130.7 degrees) </h3>
+        </div>
+
+        <div class="Manual_Step_Two">
+            <h2>Step 2: Set Up the Right Triangle</h2>
+                
+            <h3>1.	Turn 90 Degrees: Rotate exactly 90 degrees from your first measured angle (Angle 1). This ensures you are creating a right triangle (a triangle with a 90-degree angle).</h3>
+                    <p>○	Example: If Angle 1 was -130.7 degrees, your new direction should be -130.7 + 90 = 40.7 degrees.</p>
+                <h3>2.	Travel 17.5 Blocks: Travel precisely 17.5 blocks in this new 90-degree direction..</h3>
+                    <p>○	Estimating 17.5 blocks</p>
+                       <P> ■	Sprint Jumps: Completing four and a half sprint jumps is a common way to estimate this distance</p>
+        </div>
+
+        <div class="Manual_Step_Three">
+            <h2>Step 3: Second Throw and Calculation</h2>
+                <p>The second throw gives you the final piece of data needed for the calculation.</p>
+
+                <h3>1.	The Second Throw: Throw another Eye of Ender from your new position (17.5 blocks away). Align your crosshair with the center of the Eye and record the new angle. This is Angle 2 (e.g., -131.3 degrees).</h3>
+                    <img src="Images/Manual_Page/Manual_Step_Three_part_one.png" alt="Step 3 Part 1">
+                <h3>2.	Calculate Angle Variance (V): Find the absolute difference between the two angles. This difference is the angle of your triangle that corresponds to the Stronghold location.</h3>
+                    <p>○	Formula: Angle change = |Angle 1 - Angle 2|</p>
+                    <p>○	Example: |-130.7 - -131.3| = 0.6 degrees</p>
+                <h3>3.	Calculate Distance (D): Now divide 1000 / Angle change</h3>
+                    <p>○	If your variance is 1 degree, the Stronghold is approximately 1000 blocks away</p>
+                    <p>○	For our example 1000/0.6 = 1666.667 and the stronghold ends up being 1675 blocks away</p>
+                        <img src="Images/Manual_Page/Manual_Step_Three_part_three.png" alt="Step 3 Part 3">
+        </div>
+
+        <div class="Manual_Step_Four">
+            <h2>Step 4: Final Search and Dig-Down</h2>
+                <p>Travel the calculated distance (D) in the direction of your second Eye of Ender's path.</p>
+
+                <h3>1.	Final Triangulation: Once you've traveled the estimated distance, you must pinpoint the exact chunk.</h3>
+                    <p>○	Turn on chunk barriers by pressing F3 + G and throw pearls until you locate the exact chunk</p>
+                <h3>2.	Dig Down: The Eye of Ender points toward the Stronghold's starting staircase, not the End Portal room.</h3>
+                    <p>○	The starter staircase will be centered on chunk coordinates 4, 4 so digging there will guarantee you find the stronghold.</p>
+                <h3>3.	Find the Portal: Once inside the Stronghold, navigate the corridors until you find the End Portal room. Insert the remaining Eyes of Ender into any missing slots to activate the portal.</h3>
         </div>
 
     <!-- Footer -->
