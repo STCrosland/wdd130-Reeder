@@ -138,6 +138,10 @@ p {
     text-align: center;
 }
 
+main {
+    margin: 0 40px;
+}
+
 main img {
     display: block;
     margin: 0 auto 20px auto;
