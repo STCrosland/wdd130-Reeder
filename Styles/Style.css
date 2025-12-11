@@ -20,13 +20,23 @@ Purpose: General Styling for all pages in Stronghold Strategy Guide Site
 }
 
 /* Headings use Oswald */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Oswald";
 }
 
 /* Paragraphs use Inter */
 p {
     font-family: "Inter";
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Body Styles */
@@ -50,7 +60,7 @@ header {
 }
 
 header img {
-     border: 5px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 15px #ffffff;
     position: absolute;
@@ -58,7 +68,8 @@ header img {
     top: 50%;
     transform: translateY(-50%);
     max-width: 5000px;
-    height: 200px; }
+    height: 200px;
+}
 
 header h1 {
     font-family: "Oswald";
@@ -93,7 +104,7 @@ nav a {
 }
 
 nav a:hover {
-    background: url(../Images/Styling/axe.gif) center/cover no-repeat; 
+    background: url(../Images/Styling/axe.gif) center/cover no-repeat;
     background-size: 50px;
     background-color: #32CD32;
     text-shadow: 4px 4px 2px #7F00FF;
@@ -146,7 +157,7 @@ main img {
 
 .row::after {
     content: "";
-    display: block; 
+    display: block;
     clear: both;
 }
 
@@ -166,9 +177,9 @@ main img {
 }
 
 .Manual_Step_One {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Ninjabrain_Video img {
